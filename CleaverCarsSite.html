@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Cleaver Cars Ltd - Reading Garage</title>
+      <link rel="stylesheet" href="style.css" />
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header class="hero">
+         <img src="BannerImage.png" alt="Garage" />
+         <div class="hero-content">
+            <h1 class="garage-name">Cleaver Cars Ltd</h1>
+            <h2>Reliable Car Repairs & MOTs in Reading</h2>
+            <p>30+ years’ experience. Citroën & Peugeot specialists.</p>
+            <a href="tel:01189576405" class="btn-primary">Call 0118 957 6405</a>
+         </div>
+      </header>
+      <!-- <section class="cta-banner">
+         <div class="">
+           <p>Need an MOT or repair? We offer local collection and delivery.</p>
+         </div>
+         
+         </section> -->
+      <section class="services">
+         <h2>Our Services</h2>
+         <div class="services-grid">
+            <div>
+               <i class="fa-solid fa-car"></i>
+               <span>
+                  <h3>MOT Testing</h3>
+                  <p>DVSA approved Class 4 tests.</p>
+               </span>
+            </div>
+            <div>
+               <i class="fa-solid fa-screwdriver-wrench"></i>
+               <span>
+                  <h3>Repairs & Maintenance</h3>
+                  <p>Brakes, suspension, exhausts & more.</p>
+            </div>
+            </span>
+            <div>
+               <i class="fa-solid fa-clipboard-list"></i>
+               <span>
+                  <h3>Diagnostics</h3>
+                  <p>Fault code diagnostics.</p>
+               </span>
+            </div>
+            <div>
+               <i class="fa-solid fa-snowflake"></i>
+               <span>
+                  <h3>Air Conditioning</h3>
+                  <p>Leak testing, re-gas & repair.</p>
+               </span>
+            </div>
+            <div>
+               <i class="fa-solid fa-car"></i>
+               <span>
+                  <h3>Tyres & Exhausts</h3>
+                  <p>Same-day fitting available.</p>
+               </span>
+            </div>
+            <div>
+               <i class="fa-solid fa-car-battery"></i>
+               <span>
+                  <h3>Battery Checks</h3>
+                  <p>Free test. Replacements if needed.</p>
+               </span>
+            </div>
+            <div>
+               <i class="fa-solid fa-car-side"></i>
+               <span>
+                  <h3>Local Collection/Delivery</h3>
+                  <p>Within Reading area.</p>
+               </span>
+            </div>
+         </div>
+      </section>
+      <section class="trust">
+         <h2>Trusted by Drivers Across Reading</h2>
+         <div class="stars">⭐⭐⭐⭐⭐ 4.8/5 on Google (61+ reviews)</div>
+         <div class="carousel">
+            <div class="review active">
+               <p>“I found this company while looking through the Tilehurst Directory and I am so pleased I did. I've used them a couple of times and wouldn't hesitate to use again. You get a first class service and they even collected and delivered my car back to me which is such a great help due having mobility issues. If you are looking for a good reliable professional company Give them a try.” </p>
+               <cite>– Terry Gale.</cite>
+            </div>
+            <div class="review">
+               <p>“I share the opinions of other reviewers. I have used Cleaver Cars for a couple of years now and I feel comfortable knowing they are fair, honest and trustworthy. Great value, excellent service, and brilliant people. Highly recommended.”</p>
+               <cite>– Luke McSweeny.</cite>
+            </div>
+            <div class="review">
+               <p>“Just a brilliant local garage, they give great advice and service and are 100% percent trust worthy. I have been using them for nearly 20 years and look forward to keep using them. Karl, Karen and the team are true stars”</p>
+               <cite>– Dave Gray.</cite>
+            </div>
+            <div class="carousel-controls">
+               <button id="prev">‹</button>
+               <button id="next">›</button>
+            </div>
+         </div>
+      </section>
+      <section class="about">
+         <h2>Local, Independent & Trusted for Over 30 Years</h2>
+         <p>Established in 1990, Cleaver Cars is a family-run garage in Reading. We pride ourselves on honest service and deep expertise — especially in Peugeot and Citroën vehicles.</p>
+      </section>
+      <section class="find-us">
+         <h2>Find Us</h2>
+         <p>Visit our garage at 67 Loverock Road, Reading RG30 1DZ</p>
+         <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1746.5226548390833!2d-0.9976529428018134!3d51.46073972699714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48769ba916d8a5ab%3A0x778bdf8b28ea8258!2sCleaver%20Cars%20Ltd!5e0!3m2!1sen!2suk!4v1748688490762!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </section>
+      <footer class="footer">
+         <p>Open Monday – Friday, 8:00am – 5:00pm</p>
+         <p>67 Loverock Road, Reading RG30 1DZ</p>
+         <p>
+            <i class="fa-solid fa-phone"></i> <a href="tel:01189576405">0118 957 6405</a> ·
+            <i class="fa-solid fa-envelope"></i> <a href="mailto:cleavercars@btconnect.com">cleavercars@btconnect.com</a>
+         </p>
+      </footer>
+      <script>
+         const reviews = document.querySelectorAll('.review');
+         const prevBtn = document.getElementById('prev');
+         const nextBtn = document.getElementById('next');
+         const carousel = document.getElementById('carousel');
+         let current = 0;
+         
+         function showReview(index) {
+           reviews.forEach((rev, i) => {
+             rev.classList.toggle('active', i === index);
+           });
+         }
+         
+         prevBtn.addEventListener('click', () => {
+           current = (current - 1 + reviews.length) % reviews.length;
+           showReview(current);
+         });
+         
+         nextBtn.addEventListener('click', () => {
+           current = (current + 1) % reviews.length;
+           showReview(current);
+         });
+         
+         // Auto-slide
+         setInterval(() => {
+           current = (current + 1) % reviews.length;
+           showReview(current);
+         }, 6000);
+         
+         // Swipe support
+         let touchStartX = 0;
+         let touchEndX = 0;
+         
+         carousel.addEventListener('touchstart', (e) => {
+           touchStartX = e.changedTouches[0].screenX;
+         });
+         
+         carousel.addEventListener('touchend', (e) => {
+           touchEndX = e.changedTouches[0].screenX;
+           handleSwipe();
+         });
+         
+         function handleSwipe() {
+           const threshold = 50;
+           if (touchEndX < touchStartX - threshold) {
+             // swipe left
+             current = (current + 1) % reviews.length;
+             showReview(current);
+           } else if (touchEndX > touchStartX + threshold) {
+             // swipe right
+             current = (current - 1 + reviews.length) % reviews.length;
+             showReview(current);
+           }
+         }
+      </script>
+   </body>
+</html>
